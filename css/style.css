@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --cus-primary: #4A5328;
+    --cus-secondary: #FF835F;
+    --cus-color-1: #CDCBD7;
+    --cus-color-2: #2F2F1F;
+    --font-1: 52px;
+    --font-2: 33px;
+    --font-3: 24px;
+    --font-4: 18px;
+}
+
+*, html, body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 { font-size: 120px; }
+h2 { 
+    font-size: var(--font-1); 
+    letter-spacing: 5px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+h4 { font-size: var(--font-2); }
+h5 { font-size: var(--font-3); }
+p { 
+    font-size: var(--font-4);
+ }
+
+ p.text-white {
+    font-weight: 100;
+ }
+
+.section {
+    padding: 100px 0;
+}
+
+
+.section.Gallery {
+    background: url('../images/gallery-bg.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section.Collections {
+    background: url('../images/collections-bg.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.owl-carousel .owl-item .card {
+    border-radius: 30px;
+    overflow: hidden;
+    border: 3px solid #ffffff;
+}
+
+.slider-gallery-carousel *, .slider-collection-carousel * {
+    transition: all 0.8s;
+}
+
+
+.slider-gallery-carousel, .slider-collection-carousel {
+    padding-top: 70px;
+    overflow: hidden;
+}
+
+.slider-gallery-carousel.owl-carousel .owl-item .item, .slider-collection-carousel.owl-carousel .owl-item .item {
+    height: 370px;
+}
+.slider-gallery-carousel.owl-carousel .owl-item .item .card, .slider-gallery-carousel.owl-carousel .owl-item .item .card img,
+.slider-collection-carousel.owl-carousel .owl-item .item .card, .slider-collection-carousel.owl-carousel .owl-item .item .card img {
+    height: 100%;
+}
+
+.slider-gallery-carousel.owl-carousel .owl-item.active, .slider-collection-carousel.owl-carousel .owl-item.active {
+    opacity: 1;
+}
+
+.slider-gallery-carousel.owl-carousel .owl-item, .slider-collection-carousel.owl-carousel .owl-item {
+    opacity: 0;
+}
+.slider-gallery-carousel.owl-carousel .owl-nav {
+    position: absolute;
+    top: 0;
+    right: 19.5%;
+}
+.slider-collection-carousel.owl-carousel .owl-nav {
+    position: absolute;
+    top: 0;
+    left: 19.5%;
+}
+
+.slider-gallery-carousel.owl-carousel .owl-stage-outer, .slider-collection-carousel.owl-carousel .owl-stage-outer {
+    width: 67.5%;
+    margin: auto;
+    overflow: unset;
+}
+
+.slider-gallery-carousel.owl-carousel img.img-fluid.slider-img, .slider-collection-carousel.owl-carousel img.img-fluid.slider-img {
+    position: relative;
+    width: 265px;
+    max-width: 265px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.slider-gallery-carousel.owl-carousel .owl-nav button, .slider-collection-carousel.owl-carousel .owl-nav button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--cus-color-1);
+    margin: 0 8px;
+}
+.slider-gallery-carousel.owl-carousel .owl-nav button.owl-next img, .slider-collection-carousel.owl-carousel .owl-nav button.owl-next img  {
+    margin-right: -100%;
+}
+.slider-gallery-carousel.owl-carousel .owl-nav button.owl-prev img, .slider-collection-carousel.owl-carousel .owl-nav button.owl-prev img {
+    margin-left: -100%;
+}
+
+
+
+/* heading style */
+.second-heading {
+    position: relative;
+}
+
+.second-heading::after {
+    position: absolute;
+    content: "";
+    width: 110%;
+    height: 5px;
+    border-radius: 30px;
+    left: -5%;
+    top: 50%;
+}
+.second-heading.b-white::after {
+    background-color: #ffffff;
+}
+
+.second-heading.b-black::after {
+    background-color: #212529;
+}
+
+
+/* button style */
+
+.btn-primary {
+    color: #212529;
+    background-color: var(--cus-color-1);
+    border-color: var(--cus-color-1);
+    font-weight: 700;
+    padding: 8px 30px 8px 25px;
+    position: relative;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    color: #212529;
+    background-color: #9e9e9e;
+    border-color: #9e9e9e;
+    box-shadow: none !important;
+}
+.btn-primary img {
+    position: absolute;
+    top: 39%;
+    right: -18%;
+}
+.cus-button {
+
+}
